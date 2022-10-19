@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import logo from "../../public/IAQboost.png";
+import { ChevronDownIcon } from "@heroicons/react/24/solid";
 
 type listHeader = [
   {
@@ -51,19 +51,7 @@ const Header = () => {
               <Link href={list.link}>{list.name}</Link>
               {list.name === "Topics" ? (
                 <div className="pt-0.5 pr-1">
-                  <svg
-                    className="text-white h-6 w-6 group-hover:text-gray-500"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
+                  <ChevronDownIcon className="h-6 w-6" />
                 </div>
               ) : undefined}
             </div>

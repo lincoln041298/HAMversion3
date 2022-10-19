@@ -1,4 +1,5 @@
 import HeroInformation from "@/components/HeroInformation";
+import OptimalSolution from "@/components/OptimalSolution";
 import PollutantDiagram from "@/components/PollutantDiagram";
 import type { NextPage } from "next";
 import Head from "next/head";
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <HeroInformation />
       <PollutantDiagram />
+      <OptimalSolution />
     </div>
   );
 };
